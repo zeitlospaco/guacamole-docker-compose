@@ -1,0 +1,14 @@
+# Dockerfile für Apache Guacamole Web-App
+FROM guacamole/guacamole:latest
+
+# Optional: Setze das Context-Path auf ROOT, damit die URL direkt greift
+ENV WEBAPP_CONTEXT=ROOT
+
+# Falls nötig, hier weitere Environment Variablen setzen
+# ENV GUACD_HOSTNAME=guacd
+# ENV MYSQL_HOSTNAME=db
+# ENV MYSQL_DATABASE=guacamole_db
+# ENV MYSQL_USER=guacamole_user
+# ENV MYSQL_PASSWORD=supersecret
+
+EXPOSE 8080
